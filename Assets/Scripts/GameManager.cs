@@ -34,22 +34,17 @@ public class GameManager : MonoBehaviour
     }
 
     public void GenerateQuestion() {
-        // Tạo câu đố toán đơn giản cho lớp 1
-        int a = Random.Range(1, 6);
-        int b = Random.Range(1, 5);
-        correctAnswer = a + b;
+        // Câu đố cố định
+        int a = 1;
+        int b = 2;
+        correctAnswer = 3;
         questionText.text = $"{a} + {b} = ?";
 
         // Gán đáp án vào các viên thuốc
-        int correctPillIndex = Random.Range(0, pills.Length);
+        int[] pillValues = {3, 2, 5};
         for (int i = 0; i < pills.Length; i++) {
-            int val = (i == correctPillIndex) ? correctAnswer : correctAnswer + Random.Range(-2, 3);
-            if (i != correctPillIndex && val == correctAnswer) val++; 
-            
-            // Cập nhật text trên viên thuốc
-            pills[i].GetComponentInChildren<TMP_Text>().text = val.ToString();
-            // Đánh dấu viên đúng/sai vào script Pill
-            pills[i].GetComponent<Pill>().isCorrect = (i == correctPillIndex);
+            pills[i].GetComponentInChildren<TMP_Text>().text = pillValues[i].ToString();
+            pills[i].GetComponent<Pill>().isCorrect = (pillValues[i] == correctAnswer);
         }
     }
 
