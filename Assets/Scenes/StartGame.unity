@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 60053465}
   - component: {fileID: 60053464}
   - component: {fileID: 60053467}
+  - component: {fileID: 60053468}
   m_Layer: 5
   m_Name: soundButton
   m_TagString: Untagged
@@ -267,6 +268,19 @@ MonoBehaviour:
   icons: {fileID: 60053465}
   soundOnIcon: {fileID: -5033884579438549468, guid: 157e61e7401a89947b01e711106e207a, type: 3}
   soundOffIcon: {fileID: 1120241560109220500, guid: 157e61e7401a89947b01e711106e207a, type: 3}
+--- !u!114 &60053468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60053462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb3d5830ad55e442815e6334b65656f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationButton
+  buttonScale: 1.2
 --- !u!1 &113605230
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +293,8 @@ GameObject:
   - component: {fileID: 113605234}
   - component: {fileID: 113605233}
   - component: {fileID: 113605232}
+  - component: {fileID: 113605235}
+  - component: {fileID: 113605236}
   m_Layer: 5
   m_Name: exitButton
   m_TagString: Untagged
@@ -348,7 +364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 113605233}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 113605235}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &113605233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +415,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113605230}
   m_CullTransparentMesh: 1
+--- !u!114 &113605235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113605230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa505b0576513a49848db06641fa9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuController
+--- !u!114 &113605236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113605230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb3d5830ad55e442815e6334b65656f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationButton
+  buttonScale: 1.2
 --- !u!1 &389816716
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +803,8 @@ GameObject:
   - component: {fileID: 1359054354}
   - component: {fileID: 1359054353}
   - component: {fileID: 1359054352}
+  - component: {fileID: 1359054355}
+  - component: {fileID: 1359054356}
   m_Layer: 5
   m_Name: playButton
   m_TagString: Untagged
@@ -819,7 +874,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1359054353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1359054355}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1359054353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,6 +925,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359054350}
   m_CullTransparentMesh: 1
+--- !u!114 &1359054355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359054350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa505b0576513a49848db06641fa9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuController
+--- !u!114 &1359054356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359054350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb3d5830ad55e442815e6334b65656f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationButton
+  buttonScale: 1.2
 --- !u!1 &1784541475
 GameObject:
   m_ObjectHideFlags: 0
