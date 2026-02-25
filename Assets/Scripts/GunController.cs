@@ -4,14 +4,26 @@ public class GunController : MonoBehaviour
 {
     public float rotationSpeed = 50f;
     private float rotationInput = 0f;
+    private bool isMoving = false; // Biến để kiểm tra trạng thái di chuyển
 
     [Header("Shooting Settings")]
     public GameObject bulletPrefab; // Kéo Prefab viên đạn vào đây
     public Transform shootingPoint; // Kéo điểm đầu nòng (shootingPoint) vào đây
 
-    public void MoveLeft() => rotationInput = 1f;
-    public void MoveRight() => rotationInput = -1f;
-    public void StopMoving() => rotationInput = 0f;
+    public void MoveLeft() {
+        rotationInput = 1f;
+        isMoving = true;
+    }
+
+    public void MoveRight() {
+        rotationInput = -1f;
+        isMoving = true;
+    }
+
+    public void StopMoving() {
+        rotationInput = 0f;
+        isMoving = false;
+    }
 
     void Update() {
         // Xử lý xoay súng
@@ -22,8 +34,8 @@ public class GunController : MonoBehaviour
             transform.Rotate(Vector3.forward * rotationInput * rotationSpeed * Time.deltaTime);
         }
 
-        // Xử lý bắn đạn khi chạm/click màn hình
-        if (Input.GetMouseButtonDown(0)) {
+        // Xử lý bắn đạn khi chạm/click màn hình, chỉ bắn khi không di chuyển
+        if (Input.GetMouseButtonDown(0) && !isMoving) {
             Shoot();
         }
     }
