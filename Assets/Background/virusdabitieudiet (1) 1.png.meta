@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 6fb9e66d1d4f3084eb97f2528aa10aba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -505897489171526706
+    second: virusdabitieudiet (1) 1_0
+  - first:
+      213: 7307161802383277107
+    second: virusdabitieudiet (1) 1_1
+  - first:
+      213: -1408518848481577483
+    second: virusdabitieudiet (1) 1_2
+  - first:
+      213: -9044853089441883459
+    second: virusdabitieudiet (1) 1_3
+  - first:
+      213: 4871537473092431125
+    second: virusdabitieudiet (1) 1_4
+  - first:
+      213: 8558220546367005272
+    second: virusdabitieudiet (1) 1_5
+  - first:
+      213: -3963036456864626577
+    second: virusdabitieudiet (1) 1_6
+  - first:
+      213: -3642019763408863599
+    second: virusdabitieudiet (1) 1_7
+  - first:
+      213: -1521191187085413826
+    second: virusdabitieudiet (1) 1_8
+  - first:
+      213: -402241855032325590
+    second: virusdabitieudiet (1) 1_9
+  - first:
+      213: -7619183425656601988
+    second: virusdabitieudiet (1) 1_10
+  - first:
+      213: -4218538695985618606
+    second: virusdabitieudiet (1) 1_11
+  - first:
+      213: -1638405379378963340
+    second: virusdabitieudiet (1) 1_12
+  - first:
+      213: 1030749957843749440
+    second: virusdabitieudiet (1) 1_13
+  - first:
+      213: 2481948400926028052
+    second: virusdabitieudiet (1) 1_14
+  - first:
+      213: -8985206243573143183
+    second: virusdabitieudiet (1) 1_15
+  - first:
+      213: 6039481363531293691
+    second: virusdabitieudiet (1) 1_16
+  - first:
+      213: -1007734599154948869
+    second: virusdabitieudiet (1) 1_17
+  - first:
+      213: -5466801300553325609
+    second: virusdabitieudiet (1) 1_18
+  - first:
+      213: 8380503259097432045
+    second: virusdabitieudiet (1) 1_19
+  - first:
+      213: -8615374897635129063
+    second: virusdabitieudiet (1) 1_20
+  - first:
+      213: 4372485376650278675
+    second: virusdabitieudiet (1) 1_21
+  - first:
+      213: -8984670115078630741
+    second: virusdabitieudiet (1) 1_22
+  - first:
+      213: 4012523938877000085
+    second: virusdabitieudiet (1) 1_23
+  - first:
+      213: 7245932653674667373
+    second: virusdabitieudiet (1) 1_24
+  - first:
+      213: -541902707510196429
+    second: virusdabitieudiet (1) 1_25
+  - first:
+      213: -1762957857212350314
+    second: virusdabitieudiet (1) 1_26
+  - first:
+      213: 3238239245339677729
+    second: virusdabitieudiet (1) 1_27
+  - first:
+      213: 1018840364695103600
+    second: virusdabitieudiet (1) 1_28
+  - first:
+      213: 2382771309036368920
+    second: virusdabitieudiet (1) 1_29
+  - first:
+      213: -6754314823456442137
+    second: virusdabitieudiet (1) 1_30
+  - first:
+      213: -3821235447378858233
+    second: virusdabitieudiet (1) 1_31
+  - first:
+      213: -971112207250810144
+    second: virusdabitieudiet (1) 1_32
+  - first:
+      213: -7455952989985985296
+    second: virusdabitieudiet (1) 1_33
+  - first:
+      213: -5347474915285020238
+    second: virusdabitieudiet (1) 1_34
+  - first:
+      213: -3811641099779038856
+    second: virusdabitieudiet (1) 1_35
+  - first:
+      213: -3830286371219715918
+    second: virusdabitieudiet (1) 1_36
+  - first:
+      213: 1524501663356865946
+    second: virusdabitieudiet (1) 1_37
+  - first:
+      213: -9057460139624969629
+    second: virusdabitieudiet (1) 1_38
+  - first:
+      213: -1256010078806259288
+    second: virusdabitieudiet (1) 1_39
+  - first:
+      213: 5488199870129066411
+    second: virusdabitieudiet (1) 1_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1100
+        width: 523
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb4b29f9e0baf8f0800000000000000
+      internalID: -505897489171526706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_1
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 1350
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cbb5bb1f0486560800000000000000
+      internalID: 7307161802383277107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_2
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1350
+        width: 49
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f530d8e19fe37ce0800000000000000
+      internalID: -1408518848481577483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_3
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1391
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbad83e690a3a7280800000000000000
+      internalID: -9044853089441883459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_4
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1353
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51dada1758d2b9340800000000000000
+      internalID: 4871537473092431125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_5
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1371
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852a7a75e38e4c670800000000000000
+      internalID: 8558220546367005272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_6
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1334
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6849ace6577009c0800000000000000
+      internalID: -3963036456864626577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_7
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1311
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19eff094252f47dc0800000000000000
+      internalID: -3642019763408863599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_8
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1330
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32b15acca4a3eae0800000000000000
+      internalID: -1521191187085413826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_9
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1337
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a010df923fa6af0800000000000000
+      internalID: -402241855032325590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_10
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 589
+        width: 1523
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72c133ea09334690800000000000000
+      internalID: -7619183425656601988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_11
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 1304
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251a982286db475c0800000000000000
+      internalID: -4218538695985618606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_12
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 1248
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c1704fcf63349e0800000000000000
+      internalID: -1638405379378963340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_13
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 1314
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a868120a5fd4e00800000000000000
+      internalID: 1030749957843749440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_14
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1190
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4117b04bbe6a17220800000000000000
+      internalID: 2481948400926028052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_15
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 1094
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1796332f6822e4380800000000000000
+      internalID: -8985206243573143183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_16
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1022
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3efd43d4c80d350800000000000000
+      internalID: 6039481363531293691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_17
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1043
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4af75a8bec302f0800000000000000
+      internalID: -1007734599154948869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_18
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 1014
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d320e67e250224b0800000000000000
+      internalID: -5466801300553325609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_19
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 989
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def7185ff478d4470800000000000000
+      internalID: 8380503259097432045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_20
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 881
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91904a34d2a007880800000000000000
+      internalID: -8615374897635129063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_21
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 909
+        width: 78
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31774dc98403eac30800000000000000
+      internalID: 4372485376650278675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_22
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 864
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba29ba6122a005380800000000000000
+      internalID: -8984670115078630741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_23
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 454
+        width: 385
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599c38d53495fa730800000000000000
+      internalID: 4012523938877000085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_24
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 795
+        width: 46
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d9ea0ab59be8460800000000000000
+      internalID: 7245932653674667373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_25
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 473
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3374800db56ca78f0800000000000000
+      internalID: -541902707510196429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_26
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 492
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690cfde5b27b887e0800000000000000
+      internalID: -1762957857212350314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_27
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 371
+        width: 287
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124533ccf6980fc20800000000000000
+      internalID: 3238239245339677729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_28
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 362
+        width: 194
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0782b74e9e5a32e00800000000000000
+      internalID: 1018840364695103600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_29
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 409
+        width: 413
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814fa1091ed411120800000000000000
+      internalID: 2382771309036368920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_30
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 306
+        width: 415
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e839b6347ad342a0800000000000000
+      internalID: -6754314823456442137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_31
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 316
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f2adb3b9e38fac0800000000000000
+      internalID: -3821235447378858233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_32
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 59
+        width: 317
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea15c9b79ae582f0800000000000000
+      internalID: -971112207250810144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_33
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 59
+        width: 260
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fcafd94242278890800000000000000
+      internalID: -7455952989985985296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_34
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 325
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1df1d85e3f9c5b0800000000000000
+      internalID: -5347474915285020238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_35
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 281
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871246c5d945a1bc0800000000000000
+      internalID: -3811641099779038856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_36
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 286
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8cd6fc6d618dac0800000000000000
+      internalID: -3830286371219715918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_37
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 247
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9dc0e78f2e182510800000000000000
+      internalID: 1524501663356865946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_38
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 193
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ac462ddff6d4280800000000000000
+      internalID: -9057460139624969629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_39
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 108
+        width: 679
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9417aec71c19ee0800000000000000
+      internalID: -1256010078806259288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: virusdabitieudiet (1) 1_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 59
+        width: 68
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1536344b00a2c40800000000000000
+      internalID: 5488199870129066411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      virusdabitieudiet (1) 1_0: -505897489171526706
+      virusdabitieudiet (1) 1_1: 7307161802383277107
+      virusdabitieudiet (1) 1_10: -7619183425656601988
+      virusdabitieudiet (1) 1_11: -4218538695985618606
+      virusdabitieudiet (1) 1_12: -1638405379378963340
+      virusdabitieudiet (1) 1_13: 1030749957843749440
+      virusdabitieudiet (1) 1_14: 2481948400926028052
+      virusdabitieudiet (1) 1_15: -8985206243573143183
+      virusdabitieudiet (1) 1_16: 6039481363531293691
+      virusdabitieudiet (1) 1_17: -1007734599154948869
+      virusdabitieudiet (1) 1_18: -5466801300553325609
+      virusdabitieudiet (1) 1_19: 8380503259097432045
+      virusdabitieudiet (1) 1_2: -1408518848481577483
+      virusdabitieudiet (1) 1_20: -8615374897635129063
+      virusdabitieudiet (1) 1_21: 4372485376650278675
+      virusdabitieudiet (1) 1_22: -8984670115078630741
+      virusdabitieudiet (1) 1_23: 4012523938877000085
+      virusdabitieudiet (1) 1_24: 7245932653674667373
+      virusdabitieudiet (1) 1_25: -541902707510196429
+      virusdabitieudiet (1) 1_26: -1762957857212350314
+      virusdabitieudiet (1) 1_27: 3238239245339677729
+      virusdabitieudiet (1) 1_28: 1018840364695103600
+      virusdabitieudiet (1) 1_29: 2382771309036368920
+      virusdabitieudiet (1) 1_3: -9044853089441883459
+      virusdabitieudiet (1) 1_30: -6754314823456442137
+      virusdabitieudiet (1) 1_31: -3821235447378858233
+      virusdabitieudiet (1) 1_32: -971112207250810144
+      virusdabitieudiet (1) 1_33: -7455952989985985296
+      virusdabitieudiet (1) 1_34: -5347474915285020238
+      virusdabitieudiet (1) 1_35: -3811641099779038856
+      virusdabitieudiet (1) 1_36: -3830286371219715918
+      virusdabitieudiet (1) 1_37: 1524501663356865946
+      virusdabitieudiet (1) 1_38: -9057460139624969629
+      virusdabitieudiet (1) 1_39: -1256010078806259288
+      virusdabitieudiet (1) 1_4: 4871537473092431125
+      virusdabitieudiet (1) 1_40: 5488199870129066411
+      virusdabitieudiet (1) 1_5: 8558220546367005272
+      virusdabitieudiet (1) 1_6: -3963036456864626577
+      virusdabitieudiet (1) 1_7: -3642019763408863599
+      virusdabitieudiet (1) 1_8: -1521191187085413826
+      virusdabitieudiet (1) 1_9: -402241855032325590
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
