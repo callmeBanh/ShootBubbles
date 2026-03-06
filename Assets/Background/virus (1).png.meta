@@ -3,26 +3,26 @@ guid: 09e0a2fd297bdcf46aa298658c22b548
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8521434728074487970
-    second: virus (1)_0
+      213: 3654981677017712435
+    second: Virus (1)_0
   - first:
-      213: -5999980222161265321
-    second: virus (1)_1
+      213: 289972294621571363
+    second: Virus (1)_1
   - first:
-      213: -2197884731860514574
-    second: virus (1)_2
+      213: 1534520083251126728
+    second: Virus (1)_2
   - first:
-      213: -1129857391651673672
-    second: virus (1)_3
+      213: 4685585685410943735
+    second: Virus (1)_3
   - first:
-      213: 3603078067957432355
-    second: virus (1)_4
+      213: -1187937574803015865
+    second: Virus (1)_4
   - first:
-      213: -6144282314075239002
-    second: virus (1)_5
+      213: 2295659972238861424
+    second: Virus (1)_5
   - first:
-      213: -6400295378150011963
-    second: virus (1)_6
+      213: -1880461537687013771
+    second: Virus (1)_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: virus (1)_0
+      name: Virus (1)_0
       rect:
         serializedVersion: 2
-        x: 2001
-        y: 1363
-        width: 46
-        height: 69
+        x: 2014
+        y: 1367
+        width: 45
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5751786348cdb980800000000000000
-      internalID: -8521434728074487970
+      spriteID: 337c337687a19b230800000000000000
+      internalID: 3654981677017712435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virus (1)_1
+      name: Virus (1)_1
       rect:
         serializedVersion: 2
-        x: 2111
-        y: 1398
-        width: 39
-        height: 39
+        x: 2124
+        y: 1403
+        width: 38
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,18 +168,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75d55b6f6c9cbbca0800000000000000
-      internalID: -5999980222161265321
+      spriteID: 329af9ff340360400800000000000000
+      internalID: 289972294621571363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virus (1)_2
+      name: Virus (1)_2
       rect:
         serializedVersion: 2
-        x: 2188
-        y: 1365
+        x: 2202
+        y: 1370
         width: 53
         height: 43
       alignment: 0
@@ -190,18 +190,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f803343b7b8f71e0800000000000000
-      internalID: -2197884731860514574
+      spriteID: 8c1e2eea2e5bb4510800000000000000
+      internalID: 1534520083251126728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virus (1)_3
+      name: Virus (1)_3
       rect:
         serializedVersion: 2
-        x: 2285
-        y: 1374
+        x: 2300
+        y: 1379
         width: 28
         height: 27
       alignment: 0
@@ -212,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b9a0c340b0f150f0800000000000000
-      internalID: -1129857391651673672
+      spriteID: 7f213970b5b860140800000000000000
+      internalID: 4685585685410943735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virus (1)_4
+      name: Virus (1)_4
       rect:
         serializedVersion: 2
-        x: 464
+        x: 467
         y: 0
-        width: 2079
-        height: 1388
+        width: 2093
+        height: 1392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3208a92b964b00230800000000000000
-      internalID: 3603078067957432355
+      spriteID: 747f686d119938fe0800000000000000
+      internalID: -1187937574803015865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virus (1)_5
+      name: Virus (1)_5
       rect:
         serializedVersion: 2
-        x: 1766
-        y: 1351
-        width: 39
-        height: 40
+        x: 1777
+        y: 1357
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ad84d50acf1bbaa0800000000000000
-      internalID: -6144282314075239002
+      spriteID: 0746162f492dbdf10800000000000000
+      internalID: 2295659972238861424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virus (1)_6
+      name: Virus (1)_6
       rect:
         serializedVersion: 2
-        x: 104
+        x: 105
         y: 0
-        width: 723
-        height: 395
+        width: 728
+        height: 393
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cb4bc783459d27a0800000000000000
-      internalID: -6400295378150011963
+      spriteID: 5767160d13247e5e0800000000000000
+      internalID: -1880461537687013771
       vertices: []
       indices: 
       edges: []
@@ -298,13 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      virus (1)_0: -8521434728074487970
-      virus (1)_1: -5999980222161265321
-      virus (1)_2: -2197884731860514574
-      virus (1)_3: -1129857391651673672
-      virus (1)_4: 3603078067957432355
-      virus (1)_5: -6144282314075239002
-      virus (1)_6: -6400295378150011963
+      Virus (1)_0: 3654981677017712435
+      Virus (1)_1: 289972294621571363
+      Virus (1)_2: 1534520083251126728
+      Virus (1)_3: 4685585685410943735
+      Virus (1)_4: -1187937574803015865
+      Virus (1)_5: 2295659972238861424
+      Virus (1)_6: -1880461537687013771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
