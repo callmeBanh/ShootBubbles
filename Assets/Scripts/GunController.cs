@@ -1,49 +1,84 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GunController : MonoBehaviour
 {
-    public float rotationSpeed = 50f;
-    private float rotationInput = 0f;
-    private bool isMoving = false; // Biến để kiểm tra trạng thái di chuyển
-
     [Header("Shooting Settings")]
-    public GameObject bulletPrefab; // Kéo Prefab viên đạn vào đây
-    public Transform shootingPoint; // Kéo điểm đầu nòng (shootingPoint) vào đây
+    public GameObject bulletPrefab;
+    public Transform shootingPoint;
+    public float maxForce = 20f;
+    public float forceMultiplier = 5f;
 
-    public void MoveLeft() {
-        rotationInput = 1f;
-        isMoving = true;
-    }
+    [Header("Rotation Adjustment")]
+    [Tooltip("Với nòng súng hướng lên trên, hãy thử nhập -90")]
+    public float angleOffset = -90f; 
 
-    public void MoveRight() {
-        rotationInput = -1f;
-        isMoving = true;
-    }
+    private Vector2 startPos;
+    private bool isDragging = false;
 
-    public void StopMoving() {
-        rotationInput = 0f;
-        isMoving = false;
+    void Start()
+    {
+        
     }
 
     void Update() {
-        // Xử lý xoay súng
-        float angle = transform.eulerAngles.z;
-        if (angle > 180) angle -= 360;
+        HandleDragShoot();
+    }
 
-        if ((rotationInput > 0 && angle < 60) || (rotationInput < 0 && angle > -60)) {
-            transform.Rotate(Vector3.forward * rotationInput * rotationSpeed * Time.deltaTime);
+    void HandleDragShoot() {
+        // 1. Khi bắt đầu nhấn chuột
+        if (Input.GetMouseButtonDown(0)) {
+            startPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            isDragging = true;
+            
         }
 
-        // Xử lý bắn đạn khi chạm/click màn hình, chỉ bắn khi không di chuyển
-        if (Input.GetMouseButtonDown(0) && !isMoving) {
-            Shoot();
+        // 2. Khi đang giữ và kéo chuột
+        if (isDragging && Input.GetMouseButton(0)) {
+            Vector2 currentPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            
+            // Vector lực bắn (kéo ngược về sau để bắn về phía trước)
+            Vector2 shotDirection = startPos - currentPos; 
+
+            if (shotDirection.magnitude > 0.1f) {
+                // Tính góc dựa trên vector lực
+                float angle = Mathf.Atan2(shotDirection.y, shotDirection.x) * Mathf.Rad2Deg;
+                
+                // Xoay súng (cộng thêm Offset để nòng súng nhìn đúng hướng)
+                transform.rotation = Quaternion.Euler(0, 0, angle + angleOffset);
+                
+                // Tính toán lực thực tế sau khi giới hạn (Clamp)
+                Vector2 finalForce = shotDirection * forceMultiplier;
+                if (finalForce.magnitude > maxForce) finalForce = finalForce.normalized * maxForce;
+                
+            }
+        }
+
+        // 3. Khi thả chuột để bắn
+        if (Input.GetMouseButtonUp(0) && isDragging) {
+            Vector2 endPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 finalDirection = startPos - endPos;
+            Vector2 finalForce = finalDirection * forceMultiplier;
+
+            if (finalForce.magnitude > maxForce) finalForce = finalForce.normalized * maxForce;
+
+            Shoot(finalForce);
+            
+            isDragging = false;
         }
     }
 
-    void Shoot() {
+
+    void Shoot(Vector2 force) {
         if (bulletPrefab != null && shootingPoint != null) {
-            // Tạo viên đạn tại đầu nòng và xoay theo hướng súng
-            Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+            // Tạo viên đạn và xoay nó theo hướng nòng súng hiện tại
+            GameObject bullet = Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            
+            if (rb != null) {
+                // Đảm bảo viên đạn có Gravity Scale = 1 trong Inspector để khớp với đường vẽ
+                rb.AddForce(force, ForceMode2D.Impulse);
+            }
         }
     }
 }

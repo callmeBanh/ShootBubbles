@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement; // Thêm để xử lý chuyển cảnh nếu cần
 
 public class GameManager : MonoBehaviour
 {
@@ -10,12 +11,17 @@ public class GameManager : MonoBehaviour
     public TMP_Text livesText;
 
     [Header("Game Settings")]
-    public float timeLeft = 30f;
+    public float timeLeft = 40f;
     public int lives = 3;
-    public int currentLevel = 1; // Biến theo dõi màn chơi hiện tại
+    public int currentLevel = 1;
     
+    [Header("Difficulty Scaling")]
+    public float timeSpentInLevel = 0f;
+    public float speedIncreaseInterval = 10f; // Cứ mỗi 10 giây tăng tốc 1 lần
+    public float speedMultiplierPerInterval = 0.2f; // Tăng 20% mỗi lần
+
     private int correctAnswer;
-    public GameObject[] pills; // Kéo 3 viên thuốc vào đây trong Inspector
+    public GameObject[] pills; 
 
     private bool isGameOver = false;
 
@@ -28,9 +34,10 @@ public class GameManager : MonoBehaviour
     void Update() {
         if (isGameOver) return;
 
-        // Xử lý đếm ngược thời gian
         if (timeLeft > 0) {
             timeLeft -= Time.deltaTime;
+            timeSpentInLevel += Time.deltaTime; // Đếm thời gian đã trôi qua trong màn
+            
             timerText.text = "00:" + Mathf.Max(0, Mathf.Ceil(timeLeft)).ToString("00");
             
             if (timeLeft <= 0) {
@@ -39,19 +46,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Hàm tính toán độ khó dựa trên thời gian thực
+    public float GetDifficultyMultiplier() {
+        // Công thức: 1 + (thời gian trôi qua / quãng nghỉ) * tỷ lệ tăng
+        return 1f + (timeSpentInLevel / speedIncreaseInterval) * speedMultiplierPerInterval;
+    }
+
     void UpdateUI() {
         if (livesText != null) {
-            livesText.text = lives + " mạng"; // Cập nhật số mạng hiển thị
+            livesText.text = lives + " mạng";
         }
     }
 
     public void GenerateQuestion() {
         if (isGameOver) return;
 
-        // YÊU CẦU: Đặt lại thời gian về 30 giây mỗi khi bắt đầu màn chơi/câu hỏi mới
-        timeLeft = 30f;
+        timeLeft = 40f;
+        timeSpentInLevel = 0f; // Reset thời gian đếm tăng khi có câu hỏi mới
 
-        // Thiết lập dữ liệu cho từng màn chơi cố định
         if (currentLevel == 1) {
             questionText.text = "1 + 2 = ?";
             correctAnswer = 3;
@@ -68,52 +80,61 @@ public class GameManager : MonoBehaviour
             SetupPills(new int[] { 4, 8, 5 });
         } 
         else {
-            // Nếu đã vượt qua màn 3 thì thắng cuộc
             isGameOver = true;
-            loadingController.LoadScene("Win");
+            // Giả sử bạn có script loadingController hoặc dùng SceneManager
+            SceneManager.LoadScene("Win");
         }
     }
 
-    // Hàm phụ để gán giá trị vào 3 viên thuốc
     private void SetupPills(int[] values) {
+        float[] xPositions = { -2.2f, 0f, 2.2f };
+        ShuffleArray(xPositions);
+
         for (int i = 0; i < pills.Length; i++) {
             if (i >= values.Length) break;
+
+            // Đặt vị trí X cố định theo cột, Y so le để tránh dính nhau
+            float startY = 7f + (i * 1.2f);
+            pills[i].transform.position = new Vector3(xPositions[i], startY, 0);
+            pills[i].SetActive(true);
 
             Pill pillScript = pills[i].GetComponent<Pill>();
             TMP_Text pillText = pills[i].GetComponentInChildren<TMP_Text>();
 
             if (pillScript != null && pillText != null) {
                 pillText.text = values[i].ToString();
-                pillScript.isCorrect = (values[i] == correctAnswer); // Đánh dấu đúng/sai
+                pillScript.isCorrect = (values[i] == correctAnswer);
             }
+        }
+    }
+
+    void ShuffleArray(float[] array) {
+        for (int i = 0; i < array.Length; i++) {
+            float temp = array[i];
+            int randomIndex = Random.Range(i, array.Length);
+            array[i] = array[randomIndex];
+            array[randomIndex] = temp;
         }
     }
 
     public void RightAnswer() {
         if (isGameOver) return;
-
-        // Tăng cấp độ lên màn tiếp theo
         currentLevel++;
-        
         if (currentLevel <= 3) {
-            Debug.Log("Chính xác! Chuyển sang màn " + currentLevel);
-            GenerateQuestion(); // Hàm này sẽ reset lại 30 giây và đổi câu hỏi mới
+            GenerateQuestion();
         } else {
             isGameOver = true;
-            loadingController.LoadScene("Win");
+            SceneManager.LoadScene("Win");
         }
     }
 
     public void WrongAnswer() {
         if (isGameOver) return;
-
         lives--;
         UpdateUI();
-        
         if (lives <= 0) {
             GameOver();
         } else {
-            // Khi bắn sai, reset lại thời gian và câu hỏi của màn hiện tại
             GenerateQuestion(); 
         }
     }
@@ -121,6 +142,6 @@ public class GameManager : MonoBehaviour
     void GameOver() {
         if (isGameOver) return;
         isGameOver = true;
-        loadingController.LoadScene("Lose");
+        SceneManager.LoadScene("Lose");
     }
 }
