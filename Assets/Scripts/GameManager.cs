@@ -1,14 +1,18 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using UnityEngine.SceneManagement; // Thêm để xử lý chuyển cảnh nếu cần
+using UnityEngine.UI; // Cần thiết để quản lý Image trái tim
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("UI Elements")]
+    [Header("UI Elements (Text)")]
     public TMP_Text questionText;
     public TMP_Text timerText;
-    public TMP_Text livesText;
+
+    [Header("UI Elements (Hearts)")]
+    // Kéo 3 Image trái tim từ Hierarchy vào mảng này theo thứ tự
+    public GameObject[] heartImages; 
 
     [Header("Game Settings")]
     public float timeLeft = 40f;
@@ -17,26 +21,36 @@ public class GameManager : MonoBehaviour
     
     [Header("Difficulty Scaling")]
     public float timeSpentInLevel = 0f;
-    public float speedIncreaseInterval = 10f; // Cứ mỗi 10 giây tăng tốc 1 lần
+    public float speedIncreaseInterval = 10f; // Mỗi 10 giây tăng tốc 1 lần
     public float speedMultiplierPerInterval = 0.2f; // Tăng 20% mỗi lần
 
+    [Header("Particle Effects")]
+    public GameObject explosionPrefab; // Prefab hiệu ứng nổ khi bắn trúng
+
     private int correctAnswer;
-    public GameObject[] pills; 
+    public GameObject[] pills; // Danh sách 3 viên thuốc (Pills) trong Scene
 
     private bool isGameOver = false;
 
     void Start() {
         isGameOver = false;
-        UpdateUI();
+        
+        // Đảm bảo số mạng khớp với số lượng trái tim được kéo vào Inspector
+        if (heartImages != null && heartImages.Length > 0) {
+            lives = heartImages.Length;
+        }
+
+        UpdateHeartUI();
         GenerateQuestion();
     }
 
     void Update() {
         if (isGameOver) return;
 
+        // Xử lý đếm ngược thời gian
         if (timeLeft > 0) {
             timeLeft -= Time.deltaTime;
-            timeSpentInLevel += Time.deltaTime; // Đếm thời gian đã trôi qua trong màn
+            timeSpentInLevel += Time.deltaTime; 
             
             timerText.text = "00:" + Mathf.Max(0, Mathf.Ceil(timeLeft)).ToString("00");
             
@@ -46,15 +60,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Hàm tính toán độ khó dựa trên thời gian thực
+    // Hàm trả về hệ số tốc độ dựa trên thời gian thực cho PillMovement truy cập
     public float GetDifficultyMultiplier() {
-        // Công thức: 1 + (thời gian trôi qua / quãng nghỉ) * tỷ lệ tăng
         return 1f + (timeSpentInLevel / speedIncreaseInterval) * speedMultiplierPerInterval;
     }
 
-    void UpdateUI() {
-        if (livesText != null) {
-            livesText.text = lives + " mạng";
+    // Cập nhật hiển thị trái tim trên UI
+    void UpdateHeartUI() {
+        if (heartImages == null) return;
+        for (int i = 0; i < heartImages.Length; i++) {
+            if (heartImages[i] != null) {
+                heartImages[i].SetActive(i < lives);
+            }
         }
     }
 
@@ -62,8 +79,9 @@ public class GameManager : MonoBehaviour
         if (isGameOver) return;
 
         timeLeft = 40f;
-        timeSpentInLevel = 0f; // Reset thời gian đếm tăng khi có câu hỏi mới
+        timeSpentInLevel = 0f; 
 
+        // Thiết lập dữ liệu cho từng màn chơi
         if (currentLevel == 1) {
             questionText.text = "1 + 2 = ?";
             correctAnswer = 3;
@@ -81,7 +99,6 @@ public class GameManager : MonoBehaviour
         } 
         else {
             isGameOver = true;
-            // Giả sử bạn có script loadingController hoặc dùng SceneManager
             SceneManager.LoadScene("Win");
         }
     }
@@ -91,12 +108,27 @@ public class GameManager : MonoBehaviour
         ShuffleArray(xPositions);
 
         for (int i = 0; i < pills.Length; i++) {
-            if (i >= values.Length) break;
+            if (pills[i] == null) continue;
 
-            // Đặt vị trí X cố định theo cột, Y so le để tránh dính nhau
-            float startY = 7f + (i * 1.2f);
+            // Tắt đi trước khi bật lại để ép Unity cập nhật trạng thái
+            pills[i].SetActive(false); 
+            pills[i].SetActive(true); 
+
+            if (i >= values.Length) {
+                pills[i].SetActive(false);
+                continue;
+            }
+
+            // Đặt vị trí
+            float startY = 7f + (i * 1.5f);
             pills[i].transform.position = new Vector3(xPositions[i], startY, 0);
-            pills[i].SetActive(true);
+
+            // Reset Rigidbody2D nếu có (tránh việc vừa hiện ra đã rơi cực nhanh do vận tốc cũ)
+            Rigidbody2D rb = pills[i].GetComponent<Rigidbody2D>();
+            if (rb != null) {
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+            }
 
             Pill pillScript = pills[i].GetComponent<Pill>();
             TMP_Text pillText = pills[i].GetComponentInChildren<TMP_Text>();
@@ -117,8 +149,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void RightAnswer() {
+    // Được gọi từ Bullet.cs khi bắn trúng số đúng
+    public void RightAnswer(Vector3 position) {
         if (isGameOver) return;
+
+        // Sinh hiệu ứng nổ tại vị trí va chạm
+        if (explosionPrefab != null) {
+            Instantiate(explosionPrefab, position, Quaternion.identity);
+        }
+
         currentLevel++;
         if (currentLevel <= 3) {
             GenerateQuestion();
@@ -128,15 +167,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void WrongAnswer() {
+    // Được gọi từ Bullet.cs khi bắn trúng số sai, hoặc PillMovement.cs khi rơi quá thấp
+    public void WrongAnswer(Vector3 position, bool pillWasShot) {
         if (isGameOver) return;
+
+        // Chỉ nổ nếu nguyên nhân mất mạng là do bị đạn bắn trúng
+        if (pillWasShot && explosionPrefab != null) {
+            Instantiate(explosionPrefab, position, Quaternion.identity);
+        }
+
         lives--;
-        UpdateUI();
+        UpdateHeartUI();
+        
         if (lives <= 0) {
             GameOver();
         } else {
+            // Reset lại câu hỏi của màn hiện tại
             GenerateQuestion(); 
         }
+    }
+    // Overload để gọi nhanh từ PillMovement (không truyền tham số)
+    public void WrongAnswer() {
+        WrongAnswer(Vector3.zero, false);
     }
 
     void GameOver() {

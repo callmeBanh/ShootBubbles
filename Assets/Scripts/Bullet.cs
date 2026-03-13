@@ -2,33 +2,37 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 15f;
-    public float lifeTime = 3f; // Tự xóa sau 3 giây nếu không trúng gì
+    private GameManager gm;
 
-    void Start() {
-        Destroy(gameObject, lifeTime);
+    void Start()
+    {
+        // Tìm đối tượng GameManager trong Scene
+        gm = FindObjectOfType<GameManager>();
     }
 
-    void Update() {
-        // Đạn bay theo hướng 'lên' của chính nó (đã xoay theo súng)
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
-    }
+   private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Pill pill = collision.GetComponent<Pill>();
+        
+        if (pill != null && gm != null)
+        {
+            Vector3 contactPos = collision.transform.position;
 
-    void OnTriggerEnter2D(Collider2D other) {
-        // Kiểm tra xem có chạm vào viên thuốc không (Nhớ đặt Tag là "Pill")
-        if (other.CompareTag("Pill")) {
-            Pill pillScript = other.GetComponent<Pill>();
-            GameManager gm = FindObjectOfType<GameManager>();
+            // BƯỚC 1: Ẩn viên thuốc ngay lập tức
+            collision.gameObject.SetActive(false);
 
-            if (pillScript != null && gm != null) {
-                if (pillScript.isCorrect) {
-                    gm.RightAnswer(); // Bắn trúng đáp án đúng -> Thắng
-                } else {
-                    gm.WrongAnswer(); // Bắn sai -> Trừ mạng
-                }
+            // BƯỚC 2: Gọi logic xử lý màn chơi (Hàm này sẽ gọi SetupPills để bật lại các viên)
+            if (pill.isCorrect)
+            {
+                gm.RightAnswer(contactPos);
             }
-            
-            Destroy(gameObject); // Xóa viên đạn ngay khi va chạm
+            else
+            {
+                gm.WrongAnswer(contactPos, true);
+            }
+
+            // BƯỚC 3: Xóa viên đạn
+            Destroy(gameObject);
         }
     }
 }
